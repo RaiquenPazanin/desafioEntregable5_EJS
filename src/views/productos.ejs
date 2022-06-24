@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <th>DESCRIPCION</th>
+        <th>PRECIO</th>
+        <th>IMAGEN</th>
+    </tr>
+
+    <% datos.forEach(element => { %>
+        <tr>
+            <td><%= element.title %></td>
+            <td><%= element.price %></td>
+            <td>
+                <img src="<%= element.thumbnail %>" height="60" width="60"/>
+            </td>
+        </tr>
+        
+    <% }) %>
+</table>
